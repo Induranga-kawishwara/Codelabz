@@ -20,7 +20,10 @@
     "emulator-import": "firebase emulators:start --import=testdata",
     "emulator": "firebase emulators:start",
     "emulator-export": "firebase emulators:export",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predev": "node scripts/security-guard.js",
+    "prebuild": "node scripts/security-guard.js",
+    "prestart": "node scripts/security-guard.js"
   },
   "dependencies": {
     "@ant-design/icons": "^4.2.2",

@@ -7,7 +7,10 @@
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "predev": "node ../scripts/security-guard.js",
+    "prebuild": "node ../scripts/security-guard.js",
+    "prestart": "node ../scripts/security-guard.js"
   },
   "engines": {
     "node": "10"
